@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+	<head>
+		<title>out of order</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body id="ooob">
+		<h1 class="oooh">We´re sorry but this page is out of order</h1>
+		<p class=oooh id=ooop><a href="./report">report here</a></p>
+	</body>
+</html>
