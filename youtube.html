@@ -1,6 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="redirect" content="0;ooor"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+	(function(){
+		emailjs.init({
+			publicKey: "7TMcgE0QIgtjgRPLW",
+		});
+	})();
+	</script>
+	<script>
+		function sendMail(){
+			let params = {
+				name : document.getElementById("name").value,
+				de_email : document.getElementById("email").value,
+				at_location : document.getElementById("street").value,
+				at_town : document.getElementById("town").value,
+				at_date : document.getElementById("date").value,
+				at_time : document.getElementById("time").value,
+			}
+			emailjs.send("zauber_yv5rgy5","template_os04vkg",params).then(alert("Email Sent!!"))
+		}
+	</script>
 </head>
+<body>
+	<form>
+		<input type="text" id="name" name="name" required placeholder="name">
+		<input type="email" id="email" name="email" required placeholder="E-Mail">
+		<input type="tel" id="tele" name="tele" required placeholder="Telephone">
+		<input type="text" id="street" name="street" required placeholder="Street and House no.">
+		<input type="text" id="town" name="town" required placeholder="Town">
+		<input type="date" id="date" name="date" required placeholder="Datum">
+		<input type="time" id="time" name="time" required placeholder="Uhrzeit">
+		<input type="submit">
+	</form>
+</body>
 </html>
