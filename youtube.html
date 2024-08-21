@@ -22,7 +22,6 @@
 				at_location : document.getElementById("street").value,
 				at_town : document.getElementById("town").value,
 				at_date : document.getElementById("date").value,
-				at_time : document.getElementById("time").value,
 			}
 			emailjs.send("zauber_yv5rgy5","template_os04vkg",parms).then(alert("Email Sent!!"))
 		}
@@ -35,8 +34,7 @@
 		<input type="tel" id="tele" name="tele" required placeholder="Telephone">
 		<input type="text" id="street" name="street" required placeholder="Street and House no.">
 		<input type="text" id="town" name="town" required placeholder="Town">
-		<input type="date" id="date" name="date" required placeholder="Datum">
-		<input type="time" id="time" name="time" required placeholder="Uhrzeit">
+		<input type="datetime" id="date" name="date" required placeholder="Datum">
 		<button type="submit" onclick="sendMail()">Senden</button>
 	</form>
 </body>
