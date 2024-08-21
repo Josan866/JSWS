@@ -16,7 +16,7 @@
 	</script>
 	<script>
 		function sendMail(){
-			let params = {
+			let parms = {
 				name : document.getElementById("name").value,
 				de_email : document.getElementById("email").value,
 				at_location : document.getElementById("street").value,
@@ -24,7 +24,7 @@
 				at_date : document.getElementById("date").value,
 				at_time : document.getElementById("time").value,
 			}
-			emailjs.send("zauber_yv5rgy5","template_os04vkg",params).then(alert("Email Sent!!"))
+			emailjs.send("zauber_yv5rgy5","template_os04vkg",parms).then(alert("Email Sent!!"))
 		}
 	</script>
 </head>
@@ -37,7 +37,7 @@
 		<input type="text" id="town" name="town" required placeholder="Town">
 		<input type="date" id="date" name="date" required placeholder="Datum">
 		<input type="time" id="time" name="time" required placeholder="Uhrzeit">
-		<input type="submit">
+		<button type="submit" onclick="sendMail()">Senden</button>
 	</form>
 </body>
 </html>
