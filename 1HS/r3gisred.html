@@ -2,16 +2,18 @@
 <html>
   <head>
     <title id="dog1">regiterd</title>
-  </head>
-  <body>
-    <h1 id="dog2">wow</h1>
-      	   <script>
-		  const codes = window.location.search
-		  const urlParams = new URLSearchParams(codes)
+	   <script>
+		   function terni() {
+		  const URLqur = window.location.search
+		  const urlParams = new URLSearchParams(URLqur)
 		  const param1 = urlParams.get('dog')
 		  if (param1 == 7777666777777999) {
 			  document.getElementById("dog1").innerHTML = "sorry"
   			  document.getElementById("dog2").innerHTML = "I´m sorry for your loss and i hope you get over it. You make awesome videos and i hope you continue. Kind reguards Josan866, marketing of J´s Markt Companies"
+		  }
 	   </script>
+  </head>
+  <body onload="terni()">
+    <h1 id="dog2">wow</h1>
   </body>
 </html>
