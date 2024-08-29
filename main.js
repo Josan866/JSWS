@@ -5,5 +5,5 @@ const URLpar = window.location.search
 const urlParams = new URLSearchParams(URLpar)
 const param1 = urlParams.get('yt')
 if (param1 != "ternitanos") {
-  document.getElementById ("terni").InnerHTML = ""
+  document.getElementById ("terni").innerHTML = ""
 }
