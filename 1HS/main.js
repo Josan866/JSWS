@@ -1,3 +1,3 @@
 function hscodeentr(){
-    window.location = "./entercode?scrt=728658"
+    window.location = "./entercode?scrt=728658";
 }
