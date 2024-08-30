@@ -4,7 +4,7 @@ const urlParams = new URLSearchParams(urlser)
 
 //functions
 function checkcode(){ //  ./entercode check passwords
-const param1 = urlParams.get('code')  // checking for search parameter
+let param1 = urlParams.get('code')  // checking for search parameter
 if (param1 == 997589) {
     window.location = "./r3gisred"
 }
@@ -22,7 +22,7 @@ else {window.location = "../ooor"}
 
 
 function terni(){  //   ./r3gisred check if terni
-const param1 = urlParams.get('dog')  // checking for search parameter
+let param1 = urlParams.get('dog')  // checking for search parameter
 if (param1 == 7777666777777999) {
     document.getElementById("dog1").innerHTML = "sorry";
     document.getElementById("dog2").innerHTML = "I´m sorry for your loss and i hope you get over it. You make awesome videos and i hope you continue. Kind reguards Josan866, marketing of J´s Markt Companies"
