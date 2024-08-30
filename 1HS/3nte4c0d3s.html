@@ -1,24 +1,7 @@
 <!doctype html>
 <html>
-  <head>
+  <head onload="checkcode()">
     <title>checking entered code</title>
-	   <script>
-		  const codes = window.location.search
-		  const urlParams = new URLSearchParams(codes)
-		  const param1 = urlParams.get('code')
-		  if (param1 == 997589) {
-			  window.location = "./r3gisred"
-		  }
-		  else if (param1 == 2602200912082024) {
-			  window.location = "./r3gisred?dog=7777666777777999"
-		  }
-		  else if (param1 == 728658) {
-			  window.location = "../Test/Order"
-		  }
-		  else if (param1 == "bergungsalat") {
-			  window.location = "../errors/1HS/RECOVERY/usb1"
-		  }
-		  else {window.location = "../ooor"}
-	  </script>
+    <script src="./main.js"></script>
   </head>
 </html>
