@@ -4,7 +4,7 @@ const urlParams = new URLSearchParams(urlser)
 
 //functions
 function checkcode(){ //  ./entercode check passwords
-const param1 = urlParams.get('code')
+const param1 = urlParams.get('code')  // checking for search parameter
 if (param1 == 997589) {
     window.location = "./r3gisred"
 }
