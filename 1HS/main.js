@@ -21,6 +21,14 @@ else {window.location = "../ooor"}
 }
 
 
+function terni(){  //   ./r3gisred check if terni
+const param1 = urlParams.get('dog')  // checking for search parameter
+if (param1 == 7777666777777999) {
+    document.getElementById("dog1").innerHTML = "sorry"
+        document.getElementById("dog2").innerHTML = "I´m sorry for your loss and i hope you get over it. You make awesome videos and i hope you continue. Kind reguards Josan866, marketing of J´s Markt Companies"
+}}
+
+
 function hscodeentr(){ //   ./entercode 
     window.location = "./entercode?scrt=728658";
 }
