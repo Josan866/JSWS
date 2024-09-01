@@ -1,6 +1,6 @@
 //setup
-const "URLpar" = window.location.search
-const urlParams = new URLSearchParams("URLpar")
+const urlcd = window.location.search
+const urlParams = new URLSearchParams(urlcd)
 
 //functions / check if urlParams == ...
 function checkcode(){ //  ./entercode check passwords
