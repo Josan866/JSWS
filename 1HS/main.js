@@ -1,8 +1,8 @@
-//start
+//setup
 const urlser = window.location.search
 const urlParams = new URLSearchParams(urlser)
 
-//functions
+//functions / check if urlParams == ...
 function checkcode(){ //  ./entercode check passwords
 let param1 = urlParams.get('code')  // checking for search parameter
 if (param1 == 997589) {
