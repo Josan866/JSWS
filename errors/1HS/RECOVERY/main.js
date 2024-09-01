@@ -1,6 +1,6 @@
 //setup
-const "URLpar" = window.location.search
-const urlParams = new URLSearchParams("URLpar")
+const urlpar = window.location.search
+const urlParams = new URLSearchParams(urlpar)
 
 //if serch params == ...
 let param1 = urlParams.get('yt')
