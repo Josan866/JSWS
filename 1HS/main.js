@@ -18,9 +18,19 @@ else if (urlpar1 == 728658) {
 else if (urlpar1 == "bergungsalat") {
     window.location = "../errors/1HS/RECOVERY/usb1"
 };
-else {window.location = "../ooor"}
+else if (urlpar1 == "talasgnugreb") {
+    download(./code2.wav);
+    window.location = "../ooor"
+};
+else {window.location = "../ooor"};
 };
 
+
+function download(file){
+    var link = document.getElementById("dcode2");
+    link.setAttribute("download", file);
+    link.click()
+};
 
 function terni(){  //   ./r3gisred check if terni
 urlpar1 = urlParams.get('dog');  // checking for search parameter
@@ -32,4 +42,4 @@ if (urlpar1 == 7777666777777999) {
 
 function hscodeentr(){ //   ./entercode 
     window.location = "./entercode?scrt=728658";
-}
+};
