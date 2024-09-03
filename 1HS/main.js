@@ -16,7 +16,7 @@ else if (urlpar1 == 728658) {
     window.location = "../Test/Order";
 }
 else if (urlpar1 == "bergungsalat") {
-    download('./code2.wav');
+    download('./DATA/code.wav');
     window.location = "../outoforder?atr=dlf";
 }
 else if (urlpar1 == "talasgnugreb") {
