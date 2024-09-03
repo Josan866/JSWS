@@ -25,7 +25,7 @@ else if (urlpar1 == "bergungsalat") {
 }
 else if (urlpar1 == "talasgnugreb") {
     download('./DATA/congratz.txt')
-    window.location = "../outoforder?atr=dfc"
+    window.location = "../outoforder?atr=dcs"
 }
 else {window.location = "../outoforder?atr=wc"}
 };
