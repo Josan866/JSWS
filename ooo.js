@@ -11,12 +11,12 @@ urlpar1 = urlParams.get('atr')
 if (urlpar1 == "wc") {
   document.getElementById("oooh").innerHTML = "Wrong Code";
   document.getElementById("ooop").innerHTML = "Retry";
-  let test = getElementById("ooop");
+  let test; test = getElementById("ooop");
   test.setAttribute("href", "./1HS/entercode");
 }
 else if (urlpar1 == "dlf") {
   document.getElementById("oooh").innerHTML = "Document downloaded";
   document.getElementById("ooop").innerHTML = "To Homepage";
-  let test = getElementById("ooop");
+  let test; test = getElementById("ooop");
   test.setAttribute("href", "./");
 }
