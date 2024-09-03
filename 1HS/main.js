@@ -27,9 +27,9 @@ else {window.location = "../outoforder?atr=wc"}
 };
 
 
-function download('file'){
+function download(file){
     var link = document.getElementById("dcode2");
-    link.setAttribute("href", 'file');
+    link.setAttribute("href", file);
     link.click();
 };
 
