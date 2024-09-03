@@ -15,13 +15,17 @@ else if (urlpar1 == 2602200912082024) {
 else if (urlpar1 == 728658) {
     window.location = "../Test/Order";
 }
+else if (urlpar1 == "code-challenge@josh.de") {
+    download('./DATA/encrypted.txt')
+    window.location = "../outoforder?atr=dlf";
+}
 else if (urlpar1 == "bergungsalat") {
     download('./DATA/code.wav');
     window.location = "../outoforder?atr=dlf";
 }
 else if (urlpar1 == "talasgnugreb") {
     download('./DATA/congratz.txt')
-    
+    window.location = "../outoforder?atr=dfc"
 }
 else {window.location = "../outoforder?atr=wc"}
 };
