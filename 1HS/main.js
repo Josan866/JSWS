@@ -29,7 +29,7 @@ else {window.location = "../outoforder?atr=wc"}
 
 function download(file){
     var link = document.getElementById("dcode2");
-    link.setAttribute("download", file);
+    link.setAttribute("href", file);
     link.click();
 };
 
