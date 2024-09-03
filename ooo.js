@@ -16,7 +16,14 @@ if (urlpar1 == "wc") {
 }
 else if (urlpar1 == "dlf") {
   document.getElementById("oooh").innerHTML = "Document downloaded";
-  document.getElementById("ooop").innerHTML = "To Homepage";
+  document.getElementById("ooop").innerHTML = "Back to Homepage";
   let test = document.getElementById("ooop");
   test.setAttribute("href", "./");
 }
+else if (urlpar1 == "dcs") {
+  document.getElementById("oooh").innerHTML = "End Monolog downloaded";
+  document.getElementById("ooop").innerHTML = "Try HorrorScape";
+  let test = document.getElementById("ooop");
+  test.setAttribute("href", "./1HS/");
+}
+
