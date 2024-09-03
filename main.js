@@ -6,7 +6,7 @@ const urlpar = window.location.search
 const urlParams = new URLSearchParams(urlpar)
 
 //if serch params == ...
-let param1 = urlParams.get('WoInPr')
+let param1 = urlParams.get('atribute')
 if (param1 == "workinntprogress"){
   document.getElementById ("wip").innerHTML = ""
 }
