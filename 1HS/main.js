@@ -20,7 +20,7 @@ else if (urlpar1 == "bergungsalat") {
 }
 else if (urlpar1 == "talasgnugreb") {
     download('./code2.wav');
-    window.location = "../ooor";
+    window.location = "../outoforder?atr=true";
 }
 else {window.location = "../ooor"};
 };
