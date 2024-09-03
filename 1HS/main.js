@@ -20,7 +20,8 @@ else if (urlpar1 == "bergungsalat") {
     window.location = "../outoforder?atr=dlf";
 }
 else if (urlpar1 == "talasgnugreb") {
-    window.location = "../outoforder";
+    download('./congratz.txt')
+    window.location = "../outoforder?atr=dcs";
 }
 else {window.location = "../outoforder?atr=wc"}
 };
