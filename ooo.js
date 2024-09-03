@@ -1,7 +1,4 @@
 // ooo Java Script from J´s Markt
-
-// oooh ooop
-
 //setup
 const urlpar = window.location.search
 const urlParams = new URLSearchParams(urlpar)
