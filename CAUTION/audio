@@ -1,1 +1,12 @@
-audios used in this website are Spektogramms or SSTV audios.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JsScapeWetureSTUDIOS Homepage</title>
+    <link ref="stylesheet" href="./style.css" />
+</head>
+<body>
+    <h4>https://jsws.cinterop.de/CAUTION/audio</h4><br> <!--REMOVE LATER-->
+    <p>audios used in this website are Spektogramms or SSTV audios.</p>
+    <script src="main.js"></script>
+</body>
+</html>
