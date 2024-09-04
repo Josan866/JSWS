@@ -23,4 +23,10 @@ else if (urlpar1 == "dcs") {
   let test = document.getElementById("ooop");
   test.setAttribute("href", "./1HS/");
 }
-
+else if (urlpar1 == "dlfa") {
+  document.getElementById("oooh").innerHTML = "Document downloaded";
+  document.getElementById("oooc").innerHTML = '<p class="oooh"><a href="./CAUTION/audio">Caution: Loud audio</a></p>';
+  document.getElementById("ooop").innerHTML = "Back to Homepage";
+  let test = document.getElementById("ooop");
+  test.setAttribute("href", "./");
+}
