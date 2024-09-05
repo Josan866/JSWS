@@ -21,7 +21,7 @@ else if (urlpar1 == "code-challenge@josh.de") {
 }
 else if (urlpar1 == "bergungsalat") {
     download('./DATA/code.wav');
-    window.location = "../outoforder?atr=dlf";
+    window.location = "../outoforder?atr=dlfa";
 }
 else if (urlpar1 == "talasgnugreb") {
     download('./DATA/congratz.txt')
