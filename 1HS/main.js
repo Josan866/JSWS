@@ -16,7 +16,7 @@ else if (urlpar1 == 728658) {
     window.location = "../Test/Order";
 }
 else if (urlpar1 == "code-challenge@josh.de") {
-    download('./DATA/encrypted.txt')
+    download('./DATA/encrypted.txt');
     window.location = "../outoforder?atr=dlf";
 }
 else if (urlpar1 == "bergungsalat") {
@@ -24,10 +24,14 @@ else if (urlpar1 == "bergungsalat") {
     window.location = "../outoforder?atr=dlfa";
 }
 else if (urlpar1 == "talasgnugreb") {
-    download('./DATA/congratz.txt')
-    window.location = "../outoforder?atr=dcs"
+    download('./DATA/congratz.txt');
+    window.location = "../outoforder?atr=dcs";
 }
-else {window.location = "../outoforder?atr=wc"}
+else if (urlpar1 == "CKBGU-josh-1use") {
+    download('./DATA/audio_06.wav');
+    window.location = "../outoforder?atr=dlfa&hint=SSTV";
+}
+else {window.location = "../outoforder?atr=wc";}
 };
 
 
