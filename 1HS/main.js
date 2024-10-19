@@ -32,7 +32,7 @@ else if (urlpar1 == "CKBGU-josh-1use") {
     window.location = "../outoforder?atr=dlfa&hint=SSTV";
 }
 else if (urlpar1 == "birthdayboy") {
-    window.location = "../outoforder";
+    window.location = "../birthday/";
 }
 else {window.location = "../outoforder?atr=wc";}
 };
