@@ -31,6 +31,9 @@ else if (urlpar1 == "CKBGU-josh-1use") {
     download('./DATA/audio_06.wav');
     window.location = "../outoforder?atr=dlfa&hint=SSTV";
 }
+else if (urlpar1 == "birthdayboy") {
+    window.location = "../outoforder";
+}
 else {window.location = "../outoforder?atr=wc";}
 };
 
