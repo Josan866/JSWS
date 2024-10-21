@@ -8,8 +8,15 @@ urlpar1 = urlParams.get('atr')
 if (urlpar1 == "wc") {
   document.getElementById("oooh").innerHTML = "Wrong Code";
   document.getElementById("ooop").innerHTML = "Retry";
-  let test = document.getElementById("ooop");
-  test.setAttribute("href", "./1HS/entercode");
+  urlpar1 = urlParams.get('origin')
+  if (urlpar1 == "birth") {
+    let test = document.getElementById("ooop");
+    test.setAttribute("href", "./birthday/code");
+  }
+  else {
+    let test = document.getElementById("ooop");
+    test.setAttribute("href", "./1HS/entercode");
+  }
 }
 else if (urlpar1 == "dlf") {
   document.getElementById("oooh").innerHTML = "Document downloaded";
