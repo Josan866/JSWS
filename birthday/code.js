@@ -12,7 +12,7 @@ function checkcode(){ //  ./entercode check passwords
   else if (urlpar1 == "halloween") {
       window.location = "./invatation";
   }
-  else {window.location = "../outoforder?atr=wc";
+  else {window.location = "../outoforder?origin=birth&atr=wc";
 };};
 
 function download(file){
