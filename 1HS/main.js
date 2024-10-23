@@ -4,7 +4,9 @@ const urlParams = new URLSearchParams(urlcd)
 let urlpar1;
 
 //urlpar1 = urlParams.get('code'); checking for search parameter
-
+if (urlpar1 == "true"){
+    document.Get
+}
 
 function download(file){
     var link = document.getElementById("dcode2");
@@ -23,3 +25,5 @@ if (urlpar1 == 7777666777777999) {
 function hscodeentr(){ //   ./entercode 
     window.location = "./entercode?scrt=728658";
 };
+
+//secret-code = <form action="./3nte4c0d3s" method="GET">
