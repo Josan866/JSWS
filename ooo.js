@@ -13,9 +13,13 @@ if (urlpar1 == "wc") {
     let test = document.getElementById("ooop");
     test.setAttribute("href", "./birthday/code");
   }
+  else if (urlpar1 == "secret") {
+    let test = document.getElementById("ooop");
+    test.setAttribute("href", "./1HS/entercode?secret=true");
+  }
   else {
     let test = document.getElementById("ooop");
-    test.setAttribute("href", "./1HS/entercode");
+    test.setAttribute("href", "./1HS/entercode?scrt=728658");
   }
 }
 else if (urlpar1 == "dlf") {
