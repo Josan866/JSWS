@@ -7,7 +7,11 @@ let urlpar1;
 function secretcode(){
 urlpar1 = urlParams.get('secret'); 
 if (urlpar1 == "true"){
-    document.getElementById("secret-code").innerHTML = '<form action="./3nte4c0d3s2" method="GET">';
+    document.getElementById("secret-code").innerHTML = '<form action="./3nte4c0d3s2" method="GET"
+    <label for="k0b3">Enter Code:</label>
+	<input type="" id="k0b3" name="code" placeholder="scrt..." />
+	<br><br>
+	<input type="submit">>';
 };};
 
 function download(file){
