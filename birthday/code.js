@@ -10,7 +10,7 @@ function checkcode(){ //  ./entercode check passwords
       window.location = "./";
   }
   else if (urlpar1 == "halloween") {
-      window.location = "./invatation";
+      window.location = "./invatation?arg=false";
   }
   else {window.location = "../outoforder?origin=birth&atr=wc";
 };};
