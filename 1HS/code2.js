@@ -9,7 +9,7 @@ urlpar1 = urlParams.get('code');  // checking for search parameter
 if (urlpar1 == 190) {
     window.location = "./r3gisred";
 }
-else {window.location = "../outoforder?atr=wc";}
+else {window.location = "../outoforder?origin=secret&atr=wc";}
 };
 
 
