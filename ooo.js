@@ -20,7 +20,7 @@ if (urlpar1 == "wc") {
   else {
     let test = document.getElementById("ooop");
     test.setAttribute("href", "./1HS/entercode?scrt=728658");
-  }
+  };
 }
 else if (urlpar1 == "dlf") {
   document.getElementById("oooh").innerHTML = "Document downloaded";
@@ -41,3 +41,4 @@ else if (urlpar1 == "dlfa") {
   let test = document.getElementById("ooop");
   test.setAttribute("href", "./");
 }
+else {};
