@@ -4,9 +4,11 @@ const urlParams = new URLSearchParams(urlcd)
 let urlpar1;
 
 //urlpar1 = urlParams.get('code'); checking for search parameter
+function secretcode(){
+urlpar1 = urlParams.get('secret'); 
 if (urlpar1 == "true"){
-    document.Get
-}
+    document.getElementById("secret-code").InnerHTML = '<form action="./3nte4c0d3s2" method="GET"'
+};};
 
 function download(file){
     var link = document.getElementById("dcode2");
