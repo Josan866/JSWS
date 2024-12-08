@@ -18,12 +18,12 @@ if (urlpar1 == "wc") {
     let test = document.getElementById("ooop");
     test.setAttribute("href", "./1HS/entercode?secret=true");
   }
-  else if () {
+  else if (urlpar == "horscp") {
     let test = document.getElementById("ooop");
     test.setAttribute("href", "./1HS/entercode?scrt=728658");
   else {
     let test = document.getElementById("ooop");
-    test.setAttribute("href", "./");
+    test.setAttribute("href", "./outoforder");
   };
 }
 else if (urlpar1 == "dlf") { //down-load finished
