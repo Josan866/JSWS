@@ -18,26 +18,29 @@ if (urlpar1 == "wc") {
     let test = document.getElementById("ooop");
     test.setAttribute("href", "./1HS/entercode?secret=true");
   }
-  else {
+  else if () {
     let test = document.getElementById("ooop");
     test.setAttribute("href", "./1HS/entercode?scrt=728658");
+  else {
+    let test = document.getElementById("ooop");
+    test.setAttribute("href", "./");
   };
 }
-else if (urlpar1 == "dlf") {
+else if (urlpar1 == "dlf") { //down-load finished
   document.getElementById("oooh").innerHTML = "Document downloaded";
   document.getElementById("ooop").innerHTML = "Back to Homepage";
   document.getElementById("ooot").innerHTML = "Downloaded";
   let test = document.getElementById("ooop");
   test.setAttribute("href", "./");
 }
-else if (urlpar1 == "dcs") {
+else if (urlpar1 == "dcs") { //download celebration script
   document.getElementById("oooh").innerHTML = "End Monolog downloaded";
   document.getElementById("ooop").innerHTML = "Try HorrorScape";
   document.getElementById("ooot").innerHTML = "Downloaded";
   let test = document.getElementById("ooop");
   test.setAttribute("href", "./1HS/");
 }
-else if (urlpar1 == "dlfa") {
+else if (urlpar1 == "dlfa") { //down-load finished audio
   document.getElementById("oooh").innerHTML = "Document downloaded";
   document.getElementById("oooc").innerHTML = '<h2 class="oooh"><a href="./CAUTION/audio">Caution: Loud audio</a></h2>';
   document.getElementById("ooop").innerHTML = "Back to Homepage";
