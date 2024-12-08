@@ -34,7 +34,7 @@ else if (urlpar1 == "CKBGU-josh-1use") {
 else if (urlpar1 == "birthdayboy") {
     window.location = "../birthday";
 }
-else {window.location = "../outoforder?atr=wc";}
+else {window.location = "../outoforder?origin=horscp&atr=wc";}
 };
 
 
