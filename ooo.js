@@ -10,17 +10,18 @@ if (urlpar1 == "wc") {
   document.getElementById("ooop").innerHTML = "Retry";
   document.getElementById("ooot").innerHTML = "Invalide Code";
   urlpar1 = urlParams.get('origin')
-  if (urlpar1 == "birth") {
+  if (urlpar1 == "birth") { //birthday edition
     let test = document.getElementById("ooop");
     test.setAttribute("href", "./birthday/code");
   }
-  else if (urlpar1 == "secret") {
+  else if (urlpar1 == "secret") { //1HS secret codes
     let test = document.getElementById("ooop");
     test.setAttribute("href", "./1HS/entercode?secret=true");
   }
-  else if (urlpar == "horscp") {
+  else if (urlpar1 == "horscp") { //1HS
     let test = document.getElementById("ooop");
     test.setAttribute("href", "./1HS/entercode?scrt=728658");
+  }
   else {
     let test = document.getElementById("ooop");
     test.setAttribute("href", "./outoforder");
@@ -47,5 +48,5 @@ else if (urlpar1 == "dlfa") { //down-load finished audio
   document.getElementById("ooot").innerHTML = "Downloaded";
   let test = document.getElementById("ooop");
   test.setAttribute("href", "./");
-}
+} 
 else {};
