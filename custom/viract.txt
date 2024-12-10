@@ -1,1 +1,3 @@
-0
+Viract is currently
+active
+and ready to use.
