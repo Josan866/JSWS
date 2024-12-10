@@ -1,3 +1,5 @@
 Viract is currently
-active
+activated
 and ready to use.
+
+or inactive
