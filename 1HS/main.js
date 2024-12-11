@@ -6,14 +6,14 @@ let urlpar1;
 //urlpar1 = urlParams.get('code'); checking for search parameter
 function secretcode(){
 urlpar1 = urlParams.get('secret'); 
-if (urlpar1 == "true"){
+if (urlpar1 == "true") {
     document.getElementById("ecd").innerHTML = '
 	    <form action="./3nte4c0d3s2" method="GET>"
     		<label for="k0b3">Enter Code:</label>
 		<input type="" id="k0b3" name="code" placeholder="scrt" />
 		<br><br>
-		<input type="submit">';
-};};
+		<input type="submit">
+	    ';};};
 
 function download(file){
     var link = document.getElementById("dcode2");
