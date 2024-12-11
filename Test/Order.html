@@ -28,7 +28,7 @@
 		}
 	</script>
 </head>
-<body>
+<body onload="ooor()">
 	<form>
 		<input type="text" id="name" name="name" required placeholder="name">
 		<input type="email" id="email" name="email" required placeholder="E-Mail">
@@ -39,5 +39,10 @@
 		<input type="time" id="time" name="time" required disabled>
 		<button type="submit" onclick="sendMail()">Senden</button>
 	</form>
+	<script>
+		function ooor(){
+			window.location = "../ooor"
+		}
+	</script>
 </body>
 </html>
