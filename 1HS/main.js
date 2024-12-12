@@ -8,7 +8,18 @@ let urlq;
 function secretcode(){
 urlq = urlqm.get('secret'); 
 if (urlq == "true") {
-    document.getElementById("ecd").innerHTML = '<form action="./3nte4c0d3s2" method="GET"><label for="k0b3">Enter Code: </label><input type="" id="k0b3" name="code" placeholder="scrt..." /><br><br><input type="submit">';};};
+    document.getElementById("ecd").innerHTML = '<form action="./3nte4c0d3s2" method="GET"><label for="k0b3">Enter Code: </label><input type="" id="k0b3" name="code" placeholder="scrt..." /><br><br><input type="submit">';
+    urlq = urlqm.get('wc');
+    if (urlq == 1) {
+        document.getElementById("Lable").innerHTML = "Code is incorrect: ";
+    }
+    else if (urlq == 2) {
+        document.getElementById("Lable").innerHTML = "try again: ";
+    }
+    else if (urlq == 3) {
+        document.getElementById("Lable").innerHTML = "Please try again later: ";
+    }
+};};
 
 function download(file){
     var link = document.getElementById("dcode2");
