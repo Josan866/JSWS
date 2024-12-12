@@ -18,7 +18,7 @@ if (urlq == "true") {
     }
     else if (urlq == 3) {
         document.getElementById("Lable").innerHTML = "Please try again later: ";
-    }
+    };
 };};
 
 function download(file){
