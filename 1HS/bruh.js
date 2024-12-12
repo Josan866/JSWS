@@ -7,7 +7,7 @@ let urlq;
 function viract(){
     urlq = urlqm.get('viract')
     if (urlq == "viract") {
-        download(./DATA/Autoreboot-Death.batx);
+        download(./DATA/Autoreboot-death.batx);
     };
 };
 
