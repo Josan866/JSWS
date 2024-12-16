@@ -2,16 +2,20 @@
 <html>
   <head>
     <title>BRUH</title>
-    <style>
+    <style id="style">
       #body{margin:0;padding:0;background-color:#000}
       #bg{width:100%;height:100%}
       .center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+      #downloadlink{display:none;}
+      #decline{display:none;}
     </style>
   </head>
   <body id="body" onload="viract()">
     <img class="center" id="bg" src="./DATA/Bruh.jpg" />
-    <h1 class="center">BRUH</h1>
-    <a href="" id="downloadlink" style="display:none" download="">downloadlink</a>
+    <div id="vird">
+      <h1 class="center">BRUH</h1>
+      <a href="" id="downloadlink" download="">accept</a>
+    </div>
     <script>
       //setup
       const urlcd = window.location.search
@@ -20,16 +24,18 @@
 
       //functions
       function viract(){
-          urlq = urlqm.get('viract')
+          urlq = urlqm.get('viract','../ooor')
           if (urlq == "viract") {
-              download('./DATA/Autoreboot-death.batx');
+              document.getElementById("style").innerHTML = "#body{margin:0;padding:0;background-color:#000};#bg{display:none};.center{color:#fff;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)};#downloadlink{background-color:#fff;border-color:#fff;border-width:7px;border-style:solid;border-radius:22px;display:inline-block}#decline{background-color:#000;border-color:#fff;border-width:7px;border-style:solid;border-radius:22px;display:inline-block;color:#fff}"
+              document.getElementById("vird").innerHTML = '<br><h1 class="center">Are you willing to download a Virus?</h1><a href="" id="downloadlink" download="">Accept</a><a id="decline" href="../ooor">Decline</a>'
+              setdownload('./DATA/Autoreboot-death.batx');
           };
       };
 
-      function download(file){
+      function setdownload(file,location){
           var link = document.getElementById("downloadlink");
           link.setAttribute("href", file);
-          link.click();
+          document.getElementById("decline").setAttribute("href", location)
       };
     </script>
   </body>
