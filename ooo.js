@@ -1,5 +1,5 @@
 // out of order and Wrong Code Java Script from J´s Markt
-// Website: https://jsws.cinterop.de/outoforder
+// Orginal page: https://jsws.cinterop.de/outoforder
 
 //setup
 const urlpar = window.location.search
