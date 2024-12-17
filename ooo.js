@@ -1,4 +1,6 @@
-// ooo Java Script from J´s Markt
+// out of order and Wrong Code Java Script from J´s Markt
+// Website: https://jsws.cinterop.de/outoforder
+
 //setup
 const urlpar = window.location.search
 const urlParams = new URLSearchParams(urlpar)
