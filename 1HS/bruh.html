@@ -11,7 +11,7 @@
     </style>
   </head>
   <body id="body" onload="viract()">
-    <img class="center" id="bg" src="./DATA/Bruh.jpg" />
+    <div id="bg-div"><img class="center" id="bg" src="./DATA/Bruh.jpg" /></div>
     <div id="vird">
       <h1 class="center">BRUH</h1>
     </div>
@@ -21,6 +21,10 @@
       const urlqm = new URLSearchParams(urlcd)
       let urlq;
 
+      urlq = urlqm.get('atr')
+      if (urlq == "FNaF") {
+        document.getElementById("bg-div").innerHTML = '<img class="center" id="bg" src="./DATA/BRUH-FNaF.jpg">'
+      
       //functions
       function viract(){
           urlq = urlqm.get('viract','../ooor')
