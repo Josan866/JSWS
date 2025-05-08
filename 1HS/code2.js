@@ -14,13 +14,13 @@ if (urlq == 190) {
 else if (urlq == "Code"){
     window.location = "./entercode?secret=true&wc=1"
 }
-else if (urlq == "incorrect" && wccheck == 1){
+else if (urlq == "incorrect"){
     window.location = "./entercode?secret=true&wc=2"
 }
-    else if (urlq == "again" && wccheck == 2){
+    else if (urlq == "again"){
     window.location = "./entercode?secret=true&wc=3"
 }
-        else if (urlq == "again later"  && wccheck == 3){
+        else if (urlq == "again later"){
     window.location = "./bruh"
 }
 else {window.location = "../outoforder?origin=secret&atr=wc";}
