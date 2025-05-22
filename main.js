@@ -7,6 +7,11 @@ const urlParams = new URLSearchParams(urlpar)
 let urlpar1;
 
 //if serch params == ...
+urlpar1 = urlParams.get ('rnr');
+if (urlpar1 != "false"){
+  window.location = "./JsMarkt"
+};
+
 urlpar1 = urlParams.get('atr'); //atribute
 if (urlpar1 == "workinntprogress"){
   document.getElementById ("wip").innerHTML = ""
