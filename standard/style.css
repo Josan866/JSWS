@@ -1,7 +1,24 @@
+/*
+    This is a comment
+*/
+
 :root {
   --bg-grey: #555555;
   --bg-code: #222222;
-  --text-code: #eeeeee
+  --bg-kbd: #eeeeee;
+  --text-comment: #408540;
+  --text-string: #ad5b40;
+  --text-code: #eeeeee;
+  --text-kbd: #000000;
+  --border-kbd: #aaaaaa;
 }
-code{background-color: var(--bg-code); color: var(--text-code); border-radius: 0.1cm; padding: 0.1cm;}
-kbd{background-color: var(--bg-code); color: var(--text-code); border-radius: 0.1cm; padding: 0.1cm;}
+code{background-color: var(--bg-code); color: var(--text-code); border-radius: 0.2cm; padding: 0.04cm;}
+.code{background-color: var(--bg-code); color: var(--text-code); border-radius: 0.1cm; padding: 0.1cm;}
+kbd{background-color: var(--bg-kbd); color: var(--text-kbd); border: 3px var(--border-kbd) solid; border-radius: 0.1cm; padding: 0.1cm;}
+
+.contains-kbd{line-height: 0.6cm;}
+.text-start{text-align: start;}
+.text-end{text-align: end;}
+.text-center{text-align: center;}
+.comment{color: var(--text-comment)}
+.string{color: var(--text-string)}
