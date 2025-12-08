@@ -1,0 +1,7 @@
+:root {
+  --bg-grey: #555555;
+  --bg-code: #222222;
+  --text-code: #eeeeee
+}
+code{background-color: var(--bg-code); color: var(--text-code); border-radius: 0.1cm; padding: 0.1cm;}
+kbd{background-color: var(--bg-code); color: var(--text-code); border-radius: 0.1cm; padding: 0.1cm;}
