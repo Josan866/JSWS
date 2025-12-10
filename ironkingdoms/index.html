@@ -50,7 +50,7 @@
         var Tnow = fetch('https://www.cinterop.de/~josh/ironkingdoms/time.php');
         var Tcng = fetch('https://jsws.cinterop.de/ironkingdoms/LastUpdate.txt');
 
-        var Timesince = Tnow - Tcng;
+        var Timesince = getTime();
         console.log(Timesince);
       }
       LoadLastUpdate();
