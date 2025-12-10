@@ -1,22 +1,19 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>smth</title>
-  </head>
-  <body>
-  <script>
-    // Funktion zum Abrufen der Zeit
-    function ladeZeit() {
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar').innerText = data;
-        }
-      );
-    }
-
-    // Zeit sofort laden
-    ladeZeit();
-  </script>
-  </body>
-</html>
+<div class="container-fluid">
+  <a class="navbar-brand" href="https://jsws.cinterop.de/ironkingdoms/">Iron Kingdoms AG</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="https://jsws.cinterop.de/ironkingdoms/adventures/">Abenteuer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://jsws.cinterop.de/ironkingdoms/news/">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://jsws.cinterop.de/ironkingdoms/drawings/">Zeichnungen</a>
+      </li>
+    </ul>
+  </div>
+</div>
