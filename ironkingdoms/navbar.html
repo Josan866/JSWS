@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>smth</title>
+  </head>
+  <body>
+  <script>
+    // Funktion zum Abrufen der Zeit
+    function ladeZeit() {
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar').innerText = data;
+        }
+      );
+    }
 
+    // Zeit sofort laden
+    ladeZeit();
+  </script>
+  </body>
+</html>
