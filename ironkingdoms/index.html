@@ -45,6 +45,17 @@
       </div>
       <div class="col"></div>
     </div>
+    <script>
+      function LoadLastUpdate() {
+        var Tnow = fetch('https://www.cinterop.de/~josh/ironkingdoms/time.php')
+        var Tcng = fetch('https://jsws.cinterop.de/ironkingdoms/LastUpdate.txt')
+
+        var Timesince = Tnow - Tcng
+        output.log(Timesince)
+        );
+      }
+      LoadLastUpdate();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
