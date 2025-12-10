@@ -47,12 +47,11 @@
     </div>
     <script>
       function LoadLastUpdate() {
-        var Tnow = fetch('https://www.cinterop.de/~josh/ironkingdoms/time.php')
-        var Tcng = fetch('https://jsws.cinterop.de/ironkingdoms/LastUpdate.txt')
+        var Tnow = fetch('https://www.cinterop.de/~josh/ironkingdoms/time.php');
+        var Tcng = fetch('https://jsws.cinterop.de/ironkingdoms/LastUpdate.txt');
 
-        var Timesince = Tnow - Tcng
+        var Timesince = Tnow - Tcng;
         output.log("${Timesince}");
-        );
       }
       LoadLastUpdate();
       setInterval(LoadLastUpdate, 10000);
