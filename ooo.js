@@ -24,6 +24,10 @@ if (urlpar1 == "wc") {
     let test = document.getElementById("ooop");
     test.setAttribute("href", "./1HS/entercode?scrt=728658");
   }
+  else if (urlpar1 == "xmas") { //XMAS
+    let test = document.getElementById("ooop");
+    test.setAttribute("href", "./xmas/");
+  }
   else {
     window.location = "./outoforder";
   };
