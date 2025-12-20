@@ -4,6 +4,22 @@
     <title>Prossesing</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      //setup
+      const urlcd = window.location.search
+      const urlParams = new URLSearchParams(urlcd)
+      let urlpar1;
+      
+      //functions / check if urlParams == ...
+      function checkcode(){ //  ./entercode check passwords
+      urlpar1 = urlParams.get('code');  // checking for search parameter
+      if (urlpar1 == 997589) {
+          window.location = "./r3gisred";
+      }
+      else {window.location = "../outoforder?origin=xmas&atr=wc";}
+      };
+
+      checkcode()
+    </script>
   </body>
 </html>
