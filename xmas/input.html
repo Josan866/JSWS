@@ -12,11 +12,17 @@
       
       //functions / check if urlParams == ...
       function checkcode(){ //  ./entercode check passwords
-      urlpar1 = urlParams.get('code');  // checking for search parameter
-      if (urlpar1 == "xqrtlz") {
-          window.location = "./letters/mirjam";
+        urlpar1 = urlParams.get('code');  // checking for search parameter
+        if (urlpar1 == "xqrtlz") {
+            window.location = "./letters/habedichlieb";
+        }
+        else if (urlpar1 == "koslie") {
+            window.location = "./letters/habdichlieb";
+        }
+        else if (urlpar1 == "metiac") {
+          window.location = "./letters/habedichlib";
       }
-      else {window.location = "../outoforder?origin=xmas&atr=wc";}
+        else {window.location = "../outoforder?origin=xmas&atr=wc";}
       };
 
       checkcode()
