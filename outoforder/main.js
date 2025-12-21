@@ -14,22 +14,22 @@ if (urlpar1 == "wc") {
   urlpar1 = urlParams.get('origin')
   if (urlpar1 == "birth") { //birthday edition
     let test = document.getElementById("ooop");
-    test.setAttribute("href", "./birthday/code");
+    test.setAttribute("href", "../birthday/code");
   }
   else if (urlpar1 == "secret") { //1HS secret codes
     let test = document.getElementById("ooop");
-    test.setAttribute("href", "./1HS/entercode?secret=true");
+    test.setAttribute("href", "../1HS/entercode?secret=true");
   }
   else if (urlpar1 == "horscp") { //1HS
     let test = document.getElementById("ooop");
-    test.setAttribute("href", "./1HS/entercode?scrt=728658");
+    test.setAttribute("href", "../1HS/entercode?scrt=728658");
   }
   else if (urlpar1 == "xmas") { //XMAS
     let test = document.getElementById("ooop");
-    test.setAttribute("href", "./xmas/");
+    test.setAttribute("href", "../xmas/");
   }
   else {
-    window.location = "./outoforder";
+    window.location = "./";
   };
 }
 else if (urlpar1 == "dlf") { //down-load finished
@@ -37,14 +37,14 @@ else if (urlpar1 == "dlf") { //down-load finished
   document.getElementById("ooop").innerHTML = "Back to Homepage";
   document.getElementById("ooot").innerHTML = "Downloaded";
   let test = document.getElementById("ooop");
-  test.setAttribute("href", "./");
+  test.setAttribute("href", "../");
 }
 else if (urlpar1 == "dcs") { //download celebration script
   document.getElementById("oooh").innerHTML = "End Monolog downloaded";
   document.getElementById("ooop").innerHTML = "Try HorrorScape";
   document.getElementById("ooot").innerHTML = "Downloaded";
   let test = document.getElementById("ooop");
-  test.setAttribute("href", "./1HS/");
+  test.setAttribute("href", "../1HS/");
 }
 else if (urlpar1 == "dlfa") { //down-load finished audio
   document.getElementById("oooh").innerHTML = "Document downloaded";
@@ -52,6 +52,6 @@ else if (urlpar1 == "dlfa") { //down-load finished audio
   document.getElementById("ooop").innerHTML = "Back to Homepage";
   document.getElementById("ooot").innerHTML = "Downloaded";
   let test = document.getElementById("ooop");
-  test.setAttribute("href", "./");
+  test.setAttribute("href", "../");
 } 
 else {};
