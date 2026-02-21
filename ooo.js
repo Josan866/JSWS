@@ -28,6 +28,10 @@ if (urlpar1 == "wc") {
     let test = document.getElementById("ooop");
     test.setAttribute("href", "./xmas/");
   }
+  else if (urlpar1 == "bwim") { //XMAS
+    let test = document.getElementById("ooop");
+    test.setAttribute("href", "./birthday/wim/");
+  }
   else {
     window.location = "./outoforder";
   };
