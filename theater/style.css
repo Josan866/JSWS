@@ -1,12 +1,12 @@
 :root{
-  --color-1: #444499;
-  --color-2: #7777aa;
-  --color-3: #333388;
-  --color-4: #9999bb;
+  --color-1: #550000;
+  --color-2: #770020;
+  --color-3: #330010;
+  --color-4: #990030;
   
   --bg-input: #e3e3e3;
 
-  --bg-btn: #222288;
+  --bg-btn: #880000;
 }
 
 #title{position:absolute;top:10%;left:50%;transform:translate(-50%, -50%);}
@@ -21,4 +21,3 @@
 
 body{background-color:var(--color-1);margin:20px;font-family:arial;padding:10px;}
 input{background-color:var(--bg-input)}
-input[type="number"]{width:50px;position:absolute;left:100%;transform:translate(-120%);}
