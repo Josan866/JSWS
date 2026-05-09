@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rattes Umrechner</title>
+  </head>
+  <body onload="checkcode()">
+    <h1>Hier Ratte:</h1>
+    <p id="berechnet">Hier steht die antwort</p>
+    <form action="" method="GET">
+      <input type="integer" name="min" placeholder="MIN">
+      <input type="integer" name="sek" placeholder="SEK">
+      <input type="submit" value="Ausrechen">
+    </form>
+    <script>
+      //setup
+      const urlcd = window.location.search
+      const urlParams = new URLSearchParams(urlcd)
+      let urlpar1;
+      
+      //functions / check if urlParams == ...
+      function checkcode(){ //  ./entercode check passwords
+        urlpar1 = urlParams.get('min');  // checking for search parameter
+        let time = urlpar1 * 1200;
+        urlpar1 = urlParams.get('sek');
+        time += urlpar1 * 20;
+        document.getElementById("berechnet").innerHTML = time;
+      }
+    </script>
+  </body>
+</html>
