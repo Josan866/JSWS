@@ -33,14 +33,14 @@
       input[type="number"]{width:50px;position:absolute;left:100%;transform:translate(-120%);}
     </style>
   </head>
-  <body id="web">
+  <body id="web" onLoad="run()">
     <script>
       function run() {
-      fetch('https://www.cinterop.de/~josh/ReturnSMP/shutdown.php')
-        .then(response => response.text())
-        .then(data => {document.getElementById('web').innerHTML = data;});
+        const body = document.getElementById('web');
+        fetch('https://www.cinterop.de/~josh/ReturnSMP/shutdown.php')
+          .then(response => response.text())
+          .then(data => body.innerHTML = data);
       }
-      run();
     </script>
   </body>
 </html>
