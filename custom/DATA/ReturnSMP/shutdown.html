@@ -38,8 +38,19 @@
       function run() {
         const body = document.getElementById('web');
         fetch('https://www.cinterop.de/~josh/ReturnSMP/shutdown.php')
-          .then(response => response.text())
-          .then(data => body.innerHTML = data);
+          .then(response => {
+                if (!response.ok) {
+                    throw new Error('Netzwerk-Fehler: ' + response.status);
+                }
+                return response.text();
+            })
+            .then(data => {
+                body.innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Fehler beim Laden:', error);
+                body.innerHTML = 'Inhalt konnte nicht geladen werden.';
+            });
       }
     </script>
   </body>
