@@ -35,7 +35,7 @@
   </head>
   <body id="web">
     <script>
-      fetch('https://www.cinterop.de/~josh/ReturnSMP/shutdown')
+      fetch('https://www.cinterop.de/~josh/ReturnSMP/shutdown.php')
         .then(response => response.text())
         .then(data => {
           document.getElementById('web').innerHTML = data;
