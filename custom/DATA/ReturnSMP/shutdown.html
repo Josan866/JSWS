@@ -38,10 +38,7 @@
       function run() {
       fetch('https://www.cinterop.de/~josh/ReturnSMP/shutdown.php')
         .then(response => response.text())
-        .then(data => {
-          document.getElementById('web').innerHTML = data;
-        }
-      );
+        .then(data => {document.getElementById('web').innerHTML = data;});
       }
       run();
     </script>
