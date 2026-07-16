@@ -9,7 +9,7 @@ let urlpar1;
 //if serch params == ...
 urlpar1 = urlParams.get ('rnr');
 if (urlpar1 != "false"){
-  window.location = "./JsMarkt"
+  window.location = "https://www.cinterop.de/~josh/shopping"
 };
 
 urlpar1 = urlParams.get('atr'); //atribute
