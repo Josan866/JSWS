@@ -64,6 +64,7 @@ function hack(){ //<meta name=\"viewport\" content=\"width=device-width, initial
                 break;
             case 150:
                 document.getElementById("html").innerHTML = "<head><title>Renn, solange das Licht an ist</title><link rel=\"stylesheet\" href=\"style.css\" /></head><div id=\"hack_bg\"><body><h1>Renn, solange das Licht an ist</h1><p>Ein Kurzfilm von:</p><p style=\"color:var(--hack-text-error)\">Mieke, Emely, Lotta, Milla, Joshua</p></div></body>";
+                download("DATA/olli.chr");
                 break;
         }
         if(repetitions > 50 && repetitions < 70){
@@ -86,3 +87,9 @@ function scroll_ln(lines){ // Eine Zeile = 20px
     let math = parseInt(prevpx - (lines * line_height));
     document.getElementById(hack_p).setAttribute("style","top:" + String(math) + "px")
 }
+
+function download(file){
+    var link = document.getElementById("dcode2");
+    link.setAttribute("href", file);
+    link.click();
+};
