@@ -32,13 +32,14 @@ function hack(){
             case 20:
                 code("READ_ME.md");
                 code("EULA.txt");
-                code("[REDACTED]");
-                code("[REDACTED]");
                 code("Diary.txt");
-                code("[REDACTED]");
-                code("[REDACTED]");
-                code("Lamp.js");
-                code("Help.png");
+                code("Kim.chr");
+                code("Amalia.chr");
+                code("Pauline.chr");
+                code("Olli.chr");
+                code("Wilma.chr");
+                code("Lampe.obj");
+                code("Ich_mit_der_Lampe.png");
                 code("wilma.exe" + "<br>");
                 break;
             case 21:
