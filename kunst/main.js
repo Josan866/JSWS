@@ -63,7 +63,7 @@ function hack(){ //<meta name=\"viewport\" content=\"width=device-width, initial
                 document.getElementById("html").innerHTML = "<head><title>403 Forbidden</title></head><body><h1>Forbidden</h1><p>You don't have permission to access this resource.</p><hr><address>Apache/2.4.68 (Debian) Server at de.wikipedia.org Port 666</address></body>";
                 break;
             case 150:
-                document.getElementById("html").innerHTML = "<head><title>Renn, solange das Licht an ist</title><link rel=\"stylesheet\" href=\"style.css\" /></head><div id=\"hack_bg\"><body><h1>Renn, solange das Licht an ist</h1><p>Ein Kurzfilm von:</p><p style=\"color:var(--hack-text-error)\">Mieke, Emely, Lotta, Milla, Joshua</p></div></body>";
+                document.getElementById("html").innerHTML = "<head><title>Renn, solange das Licht an ist</title><link rel=\"stylesheet\" href=\"style.css\" /></head><div id=\"hack_bg\"><body><h1>Renn, solange das Licht an ist</h1><p>Ein Kurzfilm von:</p><p style=\"color:var(--hack-text-error)\">Mieke, Emely, Lotta, Milla, Joshua</p></div><a href=\"\" id=\"dcode2\" style=\"display:none\" download=\"\">code2</a></body>";
                 download("DATA/olli.chr");
                 break;
         }
