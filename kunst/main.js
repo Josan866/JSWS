@@ -48,7 +48,7 @@ function hack(){
                 code("Versteckt euch!");
                 break;
             case 31:
-                document.getElementById("overlay").innerHTML = "<div id=\"center\"><h1>Ich sehe euch ;)</h1></div>";
+                document.getElementById("overlay").innerHTML = "<div id=\"center\"><h1>Ich sehe euch</h1></div>";
                 break;
         }
         if(repetitions > 50 && repetitions < 200){
