@@ -1,12 +1,14 @@
 :root{
     --main: #444444;
     --hack: #000000;
-    --hack-text: #15ff00;
+    --hack-text: #00ff00;
     --hack-text-error: #ff0000;
-    --overlay: #ff0000;
+    --overlay: #880000;
 }
 
 body{margin:0px}
+input{background-color:var(--hack);text-align:start;color:var(--hack-text)}
+button{background-color:var(--hack);color:var(--hack-text-error);}
 #standard_bg{position:absolute;background-color:var(--main);text-align:center;width:100%;height:100%;padding:20px;}
 #hack_bg{position:fixed;background-color:var(--hack);text-align:start;color:var(--hack-text);width:100%;height:1000%;padding:0px;z-index:1;}
-#center{position:fixed;background-color:var(--overlay);top:50%;left:50%;transform:translate(-50%,-50%);padding:20px;border-radius:25px;z-index:2;}
+#center{position:fixed;background-color:var(--overlay);top:50%;left:50%;transform:translate(-50%,-50%);padding:2px;border-radius:25px;z-index:2;}
