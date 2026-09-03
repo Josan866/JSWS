@@ -7,12 +7,14 @@
   </head>
   <body>
     <div id="hack_bg">
-      <span>Using username "Olli".<br>Olli@administrator's password: </span>
-        <form action="./input" method="GET">
-          <input type="" id="code" name="code" style="text-align:center;" placeholder="alles klein!">
-          <br><br>
-          <input type="submit" value="Code testen">
-        </form>
+        <div id="text">
+            <span>Using username "Olli".<br>Olli@administrator's password: </span>
+        </div>
+        <div id="input">
+            <input type="text" id="code" placeholder="alles klein!" value="">
+            <button onclick="submit()">ENTER</button>
+        </div>
+        <div id="load"></div>
     </div>
     <script src="code.js"></script>
 </body>
