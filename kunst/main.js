@@ -5,7 +5,7 @@ const time_to_next = 100; // in milliSekunden
 setTimeout(hack, time * 1000);
 
 function hack(){
-    document.getElementById('body').innerHTML = "<div id=\"overlay\"></div><div id=\"hack_bg\" style=\"top:0px\">Initializing</div>";
+    document.getElementById('body').innerHTML = "<div id=\"overlay\"></div><div id=\"hack_bg\" style=\"top:0px\">Olli@administrator:~$ Initializing</div>";
 
     let dot = setInterval(function(){
         document.getElementById('hack_bg').innerHTML = document.getElementById('hack_bg').innerHTML + ".";
@@ -31,7 +31,7 @@ function hack(){
                 break;
             case 20:
                 code("READ_ME.md");
-                code("Don't investigate.txt");
+                code("EULA.txt");
                 code("[REDACTED]");
                 code("[REDACTED]");
                 code("Diary.txt");
@@ -39,7 +39,7 @@ function hack(){
                 code("[REDACTED]");
                 code("Lamp.js");
                 code("Help.png");
-                code("[REDACTED]" + "<br>");
+                code("wilma.exe" + "<br>");
                 break;
             case 21:
                 code("Running Script");
