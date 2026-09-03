@@ -49,6 +49,7 @@ function hack(){
                 break;
             case 31:
                 document.getElementById("overlay").innerHTML = "<div id=\"center\"><span>Ich sehe euch ;)</span></div>";
+                break;
         }
         if(repetitions > 50 && repetitions < 200){
             scroll(5);
