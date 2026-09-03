@@ -1,0 +1,10 @@
+:root{
+    --main: #444444;
+    --hack: #000000;
+    --hack-text: #15ff00;
+    --hack-text-error: #ff0000;
+}
+
+body{margin:0px}
+#standard_bg{position:fixed;background-color:var(--main);text-align:center;width:100%;height:100%;padding:20px;}
+#hack_bg{position:fixed;background-color:var(--hack);text-align:start;color:var(--hack-text);width:100%;height:200%;padding:0px;}
