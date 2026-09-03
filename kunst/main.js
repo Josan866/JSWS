@@ -1,20 +1,20 @@
 const hack_p = "hack_bg"; // hack_bg html ID
 const line_height = 18;   // höhe einer Textzeile
-const time = 3;           // in Sekunden
+const time = 1;           // in Sekunden
 const time_to_next = 100; // in milliSekunden
 
 const ctime = "31.10.1978&nbsp;&nbsp;&nbsp;03:03"
 
 setTimeout(hack, time * 1000);
 
-function hack(){
-    document.getElementById('html').innerHTML = "<head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Hacking...</title><link rel=\"stylesheet\" href=\"style.css\" /></head><body id=\"body\"></body><div id=\"overlay\"></div><div id=\"hack_bg\" style=\"top:0px\">Olli@administrator:~$&nbsp;Initializing</div></body>";
+function hack(){ //<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    document.getElementById('html').innerHTML = "<head><meta charset=\"UTF-8\"><title>Hacking...</title><link rel=\"stylesheet\" href=\"style.css\" /></head><body id=\"body\"></body><div id=\"overlay\"></div><div id=\"hack_bg\" style=\"top:0px\">Olli@administrator:~$&nbsp;Initializing</div></body>";
 
     let dot = setInterval(function(){
         document.getElementById('hack_bg').innerHTML = document.getElementById('hack_bg').innerHTML + ".";
     }, 50);
 
-    let repetitions = -30;
+    let repetitions = -10;
     setInterval(function(){
         switch (repetitions) {
             case 0:
@@ -42,7 +42,7 @@ function hack(){
                 code("Olli.chr");
                 code("Wilma.chr");
                 code("Lampe.obj");
-                code("Ich_mit_der_Lampe.png");
+                code("Lampe.png");
                 code("wilma.exe" + "<br>");
                 break;
             case 21:
@@ -61,6 +61,9 @@ function hack(){
             case 100:
                 //document.getElementById("html").innerHTML = "<head><title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL was not found on this server.</p><hr><address>Apache/2.4.68 (Debian) Server at de.wikipedia.org Port 666</address></body>";
                 document.getElementById("html").innerHTML = "<head><title>403 Forbidden</title></head><body><h1>Forbidden</h1><p>You don't have permission to access this resource.</p><hr><address>Apache/2.4.68 (Debian) Server at de.wikipedia.org Port 666</address></body>";
+                break;
+            case 150:
+                document.getElementById("html").innerHTML = "<head><title>Renn, solange das Licht an ist</title><link rel=\"stylesheet\" href=\"style.css\" /></head><div id=\"hack_bg\"><body><h1>Renn, solange das Licht an ist</h1><p>Ein Kurzfilm von:</p><p style=\"color:var(--hack-text-error)\">Mieke, Emely, Lotta, Milla, Joshua</p></div></body>";
                 break;
         }
         if(repetitions > 50 && repetitions < 70){
