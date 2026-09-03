@@ -8,7 +8,7 @@ const ctime = "31.10.1978&nbsp;&nbsp;&nbsp;03:03"
 setTimeout(hack, time * 1000);
 
 function hack(){
-    document.getElementById('html').innerHTML = "<head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Hacking...</title><link rel=\"stylesheet\" href=\"style.css\" /></head><body id=\"body\"></body><div id=\"overlay\"></div><div id=\"hack_bg\" style=\"top:0px\">Olli@administrator:~$ Initializing</div></body>";
+    document.getElementById('html').innerHTML = "<head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Hacking...</title><link rel=\"stylesheet\" href=\"style.css\" /></head><body id=\"body\"></body><div id=\"overlay\"></div><div id=\"hack_bg\" style=\"top:0px\">Olli@administrator:~$&nbsp;Initializing</div></body>";
 
     let dot = setInterval(function(){
         document.getElementById('hack_bg').innerHTML = document.getElementById('hack_bg').innerHTML + ".";
