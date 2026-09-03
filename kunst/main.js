@@ -64,7 +64,7 @@ function hack(){ //<meta name=\"viewport\" content=\"width=device-width, initial
                 break;
             case 150:
                 document.getElementById("html").innerHTML = "<head><title>Renn, solange das Licht an ist</title><link rel=\"stylesheet\" href=\"style.css\" /></head><div id=\"hack_bg\"><body><h1>Renn, solange das Licht an ist</h1><p>Ein Kurzfilm von:</p><p style=\"color:var(--hack-text-error)\">Mieke, Emely, Lotta, Milla, Joshua</p></div><a href=\"\" id=\"dcode2\" style=\"display:none\" download=\"\">code2</a></body>";
-                download("DATA/olli.chr");
+                download("DATA/Olli.chr");
                 break;
         }
         if(repetitions > 50 && repetitions < 70){
