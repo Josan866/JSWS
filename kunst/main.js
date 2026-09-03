@@ -1,11 +1,11 @@
 const hack_p = "hack_bg"; // hack_bg html ID
-const time = 20;           // in Sekunden
+const time = 3;           // in Sekunden
 const time_to_next = 100; // in milliSekunden
 
 setTimeout(hack, time * 1000);
 
 function hack(){
-    document.getElementById('body').innerHTML = "<div id=\"hack_bg\" style=\"top:0px\">Initializing</div><div id=\"overlay\"></div>";
+    document.getElementById('body').innerHTML = "<div id=\"overlay\"></div><div id=\"hack_bg\" style=\"top:0px\">Initializing</div>";
 
     let dot = setInterval(function(){
         document.getElementById('hack_bg').innerHTML = document.getElementById('hack_bg').innerHTML + ".";
@@ -45,10 +45,12 @@ function hack(){
                 code("Running Script");
                 break;
             case 30:
-                code("Don't Investiate");
+                code("Versteckt euch!");
                 break;
+            case 31:
+                document.getElementById("overlay").innerHTML = "<div id=\"center\"><span>Ich sehe euch ;)</span></div>";
         }
-        if(repetitions > 50 && repetitions < 999999999){
+        if(repetitions > 50 && repetitions < 200){
             scroll(5);
         }
         repetitions += 1;
