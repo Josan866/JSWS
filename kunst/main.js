@@ -49,10 +49,8 @@ function hack(){ //<meta name=\"viewport\" content=\"width=device-width, initial
             case 21:
                 code("Running Script");
                 break;
-            case 30:
-                code_err("Versteckt euch!");
-                break;
             case 35:
+                code_err("Ich sehe euch");
                 document.getElementById("overlay").innerHTML = "<div id=\"center\"><h1>Ich&nbsp;sehe&nbsp;euch</h1></div>";
                 break;
             case 75:
