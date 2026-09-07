@@ -10,7 +10,7 @@ function submit(){
     const code = document.getElementById("code").getAttribute("value");
     trys += 1;
 
-    switch (code) {
+    switch (code.toLowerCase()) {
         case "dreamer":
             correct(code, "site")
             break;
