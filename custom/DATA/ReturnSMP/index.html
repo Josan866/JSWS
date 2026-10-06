@@ -41,7 +41,8 @@
         <form action="" method="GET">
           <input type="integer" name="std" placeholder="STUNDEN"><br>
           <input type="integer" name="min" placeholder="MINUTEN"><br>
-          <input type="integer" name="sek" placeholder="SEKUNDEN"><br><br>
+          <input type="integer" name="sek" placeholder="SEKUNDEN"><br>
+          <input type="checkbox" id="ticks" name="ticks" checked="true"><label for="ticks"> In Ticks</label><br><br>
           <input type="submit" value="Ausrechen"><br>
         </form>
       </div>
@@ -60,6 +61,10 @@
         time += urlpar1 * 1200;
         urlpar1 = urlParams.get('sek');
         time += urlpar1 * 20;
+        urlpar1 = urlParams.get('ticks');
+        if (!urlpar1) {
+          time /= 20;
+        }
         document.getElementById("berechnet").innerHTML = time;
       }
     </script>
