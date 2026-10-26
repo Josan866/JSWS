@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hex_Shower</title>
+    <style>
+      body{margin: 0px;padding: 0px;}
+      div{margin: 0px;padding: 0px; width: 100%; height: 100%}
+    </style>
+  </head>
+  <body id="body" onload="load()"></body>
+  <script>
+    const urlcd = window.location.search
+    const urlParams = new URLSearchParams(urlcd)
+    let urlpar1 = urlParams.get('c');
+    
+    function load() {
+      document.getElementById("body").innerHTML = "<div style=\"background-color: #" + urlpar1 + ";\"></div>"
+    }
+  </script>
+</html>
