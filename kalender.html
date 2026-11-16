@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalender</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="center">
+      <div id="incenter">
+        <h3 id="name">Lädt...</h3>
+        <h1 id="days"></h1>
+      </div>
+    </div>
+  </body>
+  <script>
+    fetch("https://www.cinterop.de/~josh/rks-clz/kalender/nextFree.php?id=name")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('name').innerHTML = data;
+        })
+        .catch(error => {
+          console.error("Fehler beim Laden:", error);
+          document.getElementById('name').innerHTML = "Fehler beim Laden";
+        });
+    fetch("https://www.cinterop.de/~josh/rks-clz/kalender/nextFree.php?id=days")
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('days').innerHTML = data;
+        })
+        .catch(error => {
+          console.error("Fehler beim Laden:", error);
+          document.getElementById('days').innerHTML = "Fehler beim Laden";
+        });
+  </script>
+</html>
