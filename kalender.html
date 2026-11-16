@@ -26,7 +26,7 @@
     fetch("https://www.cinterop.de/~josh/rks-clz/kalender/nextFree.php?id=days")
         .then(response => response.text())
         .then(data => {
-          document.getElementById('days').innerHTML = data;
+          document.getElementById('days').innerHTML = data + " Tag(e)";
         })
         .catch(error => {
           console.error("Fehler beim Laden:", error);
