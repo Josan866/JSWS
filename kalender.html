@@ -11,6 +11,7 @@
         <h3 id="name"></h3>
         <h2 id="type">Lädt...</h2>
         <h1 id="days"></h1>
+        <h3 id="date"></h3>
       </div>
     </div>
   </body>
@@ -47,6 +48,15 @@
           .catch(error => {
             console.error("Fehler beim Laden:", error);
             document.getElementById('days').innerHTML = "Fehler beim Laden";
+          });
+      fetch("https://www.cinterop.de/~josh/rks-clz/kalender/nextFree.php?id=date")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('date').innerHTML = data;
+          })
+          .catch(error => {
+            console.error("Fehler beim Laden:", error);
+            document.getElementById('date').innerHTML = "Fehler beim Laden";
           });
     }
   </script>
