@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creating</title>
+  </head>
+  <body>
+    <form>
+      <input name="name" type="text" placeholder="Name">
+      <input name="sdat" type="Date">
+      <input name="edat" type="Date">
+    </form>
+  </body>
+  <script>
+    const urlcd = window.location.search
+    const urlParams = new URLSearchParams(urlcd)
+
+    if (urlParams != null) {
+      window.location = "https://www.cinterop.de/~josh?" + urlParams;
+    }
+  </script>
+</html>
