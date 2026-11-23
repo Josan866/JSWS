@@ -11,9 +11,16 @@ const author = "Redacted" // Authoren
 const ctime = "31.10.1978&nbsp;&nbsp;&nbsp;03:03"
 
 const Text = [
-    "Searching Data",
-    "Fuck Off",
-    "Lolos"
+    "Searching for Data",
+    "Data found: C:\\Users\\Olli@administrator\\NTUSER.DAT",
+    "Destroying Connection...",
+    "Terminating Internet Connection",
+    "Routing Power",
+    "Logger: ESCAPE",
+    "Logger: FIND ME",
+    "Logger: HELP",
+    "Logger: SHE WILL FIND YOU",
+    "Clearing Cashe"
 ]
 
 setTimeout(hack, time * 1000);
@@ -85,7 +92,7 @@ function hack(){ //<meta name=\"viewport\" content=\"width=device-width, initial
             code(Text[Math.floor(Math.random() * Text.length)]);
             if (repetitions > 67) scroll_ln(1);
         }
-        if(repetitions > 111 && repetitions < 160){
+        if(repetitions > 111 && repetitions < 163){
             scroll_ln(1);
         }
         repetitions += 1;
