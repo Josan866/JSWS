@@ -1,3 +1,7 @@
+const urlpar = window.location.search
+const urlParams = new URLSearchParams(urlpar)
+let urlpar1;
+
 const hack_p = "hack_bg"; // hack_bg html ID
 const line_height = 18;   // höhe einer Textzeile
 const time = 1;           // in Sekunden
@@ -64,7 +68,10 @@ function hack(){ //<meta name=\"viewport\" content=\"width=device-width, initial
             case 150:
                 document.getElementById("html").innerHTML = "<head><title>Renn, solange das Licht an ist</title><link rel=\"stylesheet\" href=\"style.css\" /></head><div id=\"hack_bg\"><body><h1>Renn, solange das Licht an ist</h1><p>Ein Kurzfilm von:</p><p style=\"color:var(--hack-text-error)\">" + author + "</p><h1 style=\"color:var(--hack-text-error)\">Datei wird in 10 Sekunden Runtergeladen</h1></div><a href=\"\" id=\"dcode2\" style=\"display:none\" download=\"\">code2</a></body>";
                 setTimeout(function(){
-                    download("DATA/Olli.chr");
+                    urlpar1 = urlParams.get('d');
+                    if (urlpar1 == "1") {
+                        download("DATA/Olli.chr");
+                    }
                 }, 10000)
                 break;
         }
