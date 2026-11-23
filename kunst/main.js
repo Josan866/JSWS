@@ -68,7 +68,7 @@ function hack(){ //<meta name=\"viewport\" content=\"width=device-width, initial
                 break;
             case 100:
                 code_err("Ich sehe euch");
-                document.getElementById("overlay").innerHTML = "<div id=\"center\"><h1>Ich&nbsp;sehe&nbsp;euch</h1></div>";
+                document.getElementById("overlay").innerHTML = "<div id=\"center large\"><h1>Ich&nbsp;sehe&nbsp;euch!!!</h1></div>";
                 break;
             case 185:
                 document.getElementById("overlay").innerHTML = "";
