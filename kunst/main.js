@@ -82,7 +82,7 @@ function hack(){ //<meta name=\"viewport\" content=\"width=device-width, initial
                 break;
         }
         if(repetitions > 50 && repetitions < 70){
-            code(Text[Math.Round(Math.Random() * (Text.Count - 1))]);
+            code(Text[Math.round(Math.floor(Math.random() * (Text.Count - 1))]);
             scroll_ln(1);
         }
         repetitions += 1;
