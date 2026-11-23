@@ -59,15 +59,15 @@ function hack(){ //<meta name=\"viewport\" content=\"width=device-width, initial
             case 21:
                 code("Running Script");
                 break;
-            case 175:
+            case 100:
                 code_err("Ich sehe euch");
                 document.getElementById("overlay").innerHTML = "<div id=\"center\"><h1>Ich&nbsp;sehe&nbsp;euch</h1></div>";
                 break;
-            case 195:
+            case 185:
                 document.getElementById("overlay").innerHTML = "";
                 scroll_ln(1);
                 break;
-            case 220:
+            case 200:
                 //document.getElementById("html").innerHTML = "<head><title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL was not found on this server.</p><hr><address>Apache/2.4.68 (Debian) Server at de.wikipedia.org Port 666</address></body>";
                 document.getElementById("html").innerHTML = "<head><title>403 Forbidden</title></head><body><h1>Forbidden</h1><p>You don't have permission to access this resource.</p><hr><address>Apache/2.4.68 (Debian) Server at de.wikipedia.org Port 666</address></body>";
                 break;
@@ -85,7 +85,7 @@ function hack(){ //<meta name=\"viewport\" content=\"width=device-width, initial
             code(Text[Math.floor(Math.random() * Text.length)]);
             if (repetitions > 67) scroll_ln(1);
         }
-        if(repetitions > 105 && repetitions < 175){
+        if(repetitions > 111 && repetitions < 160){
             scroll_ln(1);
         }
         repetitions += 1;
