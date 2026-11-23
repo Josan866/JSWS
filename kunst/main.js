@@ -10,6 +10,12 @@ const author = "Redacted" // Authoren
 
 const ctime = "31.10.1978&nbsp;&nbsp;&nbsp;03:03"
 
+const Text = [
+    "Searching Data",
+    "Fuck Off",
+    "Lolos"
+]
+
 setTimeout(hack, time * 1000);
 
 function hack(){ //<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
@@ -76,6 +82,7 @@ function hack(){ //<meta name=\"viewport\" content=\"width=device-width, initial
                 break;
         }
         if(repetitions > 50 && repetitions < 70){
+            code(Text[Math.Round(Math.Random() * (Text.Count - 1))]);
             scroll_ln(1);
         }
         repetitions += 1;
