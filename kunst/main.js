@@ -59,19 +59,19 @@ function hack(){ //<meta name=\"viewport\" content=\"width=device-width, initial
             case 21:
                 code("Running Script");
                 break;
-            case 35:
+            case 105:
                 code_err("Ich sehe euch");
                 document.getElementById("overlay").innerHTML = "<div id=\"center\"><h1>Ich&nbsp;sehe&nbsp;euch</h1></div>";
                 break;
-            case 75:
+            case 125:
                 document.getElementById("overlay").innerHTML = "";
                 scroll_ln(1);
                 break;
-            case 100:
+            case 150:
                 //document.getElementById("html").innerHTML = "<head><title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL was not found on this server.</p><hr><address>Apache/2.4.68 (Debian) Server at de.wikipedia.org Port 666</address></body>";
                 document.getElementById("html").innerHTML = "<head><title>403 Forbidden</title></head><body><h1>Forbidden</h1><p>You don't have permission to access this resource.</p><hr><address>Apache/2.4.68 (Debian) Server at de.wikipedia.org Port 666</address></body>";
                 break;
-            case 150:
+            case 200:
                 document.getElementById("html").innerHTML = "<head><title>Renn, solange das Licht an ist</title><link rel=\"stylesheet\" href=\"style.css\" /></head><div id=\"hack_bg\"><body><h1>Renn, solange das Licht an ist</h1><p>Ein Kurzfilm von:</p><p style=\"color:var(--hack-text-error)\">" + author + "</p><h1 style=\"color:var(--hack-text-error)\">Error: 404</h1></div><a href=\"\" id=\"dcode2\" style=\"display:none\" download=\"\">code2</a></body>";
                 setTimeout(function(){
                     urlpar1 = urlParams.get('d');
@@ -81,8 +81,11 @@ function hack(){ //<meta name=\"viewport\" content=\"width=device-width, initial
                 }, 10000)
                 break;
         }
-        if(repetitions > 50 && repetitions < 70){
+        if(repetitions > 35 && repetitions < 100){
             code(Text[Math.floor(Math.random() * Text.length)]);
+            if (repetitions > 50) scroll_ln(1);
+        }
+        if(repetitions > 105 && repetitions < 125){
             scroll_ln(1);
         }
         repetitions += 1;
